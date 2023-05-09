@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding:0;
+}
+* img{
+    width: 15px;
+    height: 15px;
+}
+body{
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+h1{
+    font-size: 50px;
+}
+#maze-container{
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    height: max-content;
+}
+#maze-container > #restart{
+    display: none;
+    position: absolute;
+    background-color: aquamarine;
+    transition-duration: 0.4s;
+    border-radius: 32px;
+    width: 100px;
+    height: 50px;
+    top:190px;
+    left: 190px;
+}
+
+#maze-container > #restart:hover{
+    background-color: red;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    color: white;
+}
+.row{
+    display: flex;
+}
+
+.cell{
+    width: 15px;
+    height: 15px;
+    
+    background-color: whitesmoke;
+}
+
+.wall{
+    background-color: black;
+    
+}
+
+
+#tank{
+    position: absolute;
+    
+    left:240px;
+    top: 15px;
+
+    
+}
+
+#flag{
+    position: absolute;
+    bottom: 0px;
+    left: 330px;
+}
